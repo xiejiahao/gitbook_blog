@@ -6,7 +6,7 @@
 
 * 由于这些笔记是由优秀的内容组织框架和软件`gitbook`写作和组织成一本书的形式，所以也称“本书”。
 
-* 本书的题目为 * Graduate Self-cultivation * ，意为“研究生的自我修养”，灵感来源于一本较著名的gitbook笔记 * [程序员的自我修养](https://leohxj.gitbooks.io/a-programmer-prepares/content/index.html) * ，这本笔记也是我接触gitbook的开始。
+* 本书的题目为 *Graduate Self-cultivation* ，意为“研究生的自我修养”，灵感来源于一本较著名的gitbook笔记 *[程序员的自我修养](https://leohxj.gitbooks.io/a-programmer-prepares/content/index.html)* ，这本笔记也是我接触gitbook的开始。
 
 * gitbook editor + github page 是我目前十分满意的创作方式，也是本书的创作形式，满足了创作的简洁和方便，形式的美观，功能的强大的特点。
 
