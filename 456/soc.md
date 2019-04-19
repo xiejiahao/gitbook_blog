@@ -1,0 +1,3 @@
+# OPTIC_SOC
+
+SPIN = 2

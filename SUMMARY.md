@@ -10,9 +10,10 @@
   * [Vim](chapter1/vim.md)
   * Bibletex
 * [VASP计算](456.md)
+  * [SOC](456/soc.md)
 * [Physics](physics.md)
 * Spring
 * [Book Note](book-note.md)
   * [123](123.md)
-* [The Quantum Theory of Light ](the-quantum-theory-of-light.md)
+  * [The Quantum Theory of Light](the-quantum-theory-of-light.md)
 
