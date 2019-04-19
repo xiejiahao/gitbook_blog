@@ -24,6 +24,7 @@
       ```
 
     * `NBANDS_CDER=MIN(LAST_FILLED_OPTICS(W)*2, WDES%NB_TOT)`设置NBANDS\_CDER，即此子程序中考虑的最大能带数量
+
     * `CALL LRF_EPSILON`计算介电常数虚部的函数
 
       * 设置NB\_TOT和NBANDS
@@ -50,26 +51,29 @@
         ENDDO
         ENDD
         ```
-        其中值得注意的是根据ISMEAR的不同有两种计算方法，-1,0是一种，-4,-5是另一种。
+
+        其中值得注意的是根据ISMEAR的不同有两种计算方法，-1,0是一种，-4,-5是另一种。  
         虽然在注释中提到这两种算法在理论上是等价的，但是实际上结果确实不尽相同。
+
         * ISMEAR = -1,0的方法
+
           ```fortran
               SUBROUTINE EPSILON_IMAG( WDES, W0, CHAM1, CHAM2, DER1, DER2, EFERMI, & 
                 NEDOS, DOS, DELTAE, ISMEAR, SIGMA, OMEGA, WPLASMON, CON, TAU)
                 DOS=0
                 WPLASMON=0
                 CON=0
-          
+
                 DO ISP=1,WDES%ISPIN
                 DO NK=1,WDES%NKPTS
-          
+
                    IF (MOD(NK-1,WDES%COMM_KINTER%NCPU).NE.WDES%COMM_KINTER%NODE_ME-1) CYCLE
-          
+
           ! N1 could be restricted to occupied bands
                    DO N1=1,WDES%NB_TOT
           ! N1 must be smaller tan NBANDS_CDER
                    IF (N1>NBANDS_CDER) CYCLE
-          
+
                    ENERGY=W0%CELTOT(N1,NK,ISP)-EFERMI
                    IF (ISMEAR==-1) THEN
                       SFUN=F(-ENERGY,ABS(SIGMA))
@@ -82,7 +86,7 @@
           ! conversion factor 4 pi e^2/ volume to obtain polarization
                    WPLASMON=WPLASMON+DFUN*DER1(N1,NK,ISP)*DER2(N1,NK,ISP)*WDES%RSPIN*WDES%WTKPT(NK)*(4*PI*FELECT/OMEGA)
                    CON=CON          +DFUN*DER1(N1,NK,ISP)*DER2(N1,NK,ISP)*WDES%RSPIN*WDES%WTKPT(NK)*(4*PI*FELECT/OMEGA)*TAU*CONTCON 
-          
+
           ! N2 could be restricted to empty bands
                    DO N2=N1+1,WDES%NB_TOT
                       WEIGHT=(W0%FERTOT(N1,NK,ISP)-W0%FERTOT(N2,NK,ISP))*WDES%RSPIN*WDES%WTKPT(NK)
@@ -100,10 +104,11 @@
                    ENDDO
                 ENDDO
                 ENDDO
-          
+
               END SUBROUTINE EPSILON_IMA
           ```
-            * IF \(NPAR ==1 .AND. KPAR==1 .AND. LPAW\) THEN CALL CALC\_NABIJ\(optics.F\)
+
+          * IF \(NPAR ==1 .AND. KPAR==1 .AND. LPAW\) THEN CALL CALC\_NABIJ\(optics.F\)
 
 
 
