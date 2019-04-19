@@ -106,7 +106,11 @@
                 ENDDO
 
               END SUBROUTINE EPSILON_IMA
-          ```
+           ```
+        * ISMEAR=-4,-5
+        ```fortran
+        EPSILON_IMAG_TET
+        ```
 
           * IF \(NPAR ==1 .AND. KPAR==1 .AND. LPAW\) THEN CALL CALC\_NABIJ\(optics.F\)
 
