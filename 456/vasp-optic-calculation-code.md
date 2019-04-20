@@ -111,8 +111,36 @@
         ```fortran
         EPSILON_IMAG_TET
         ```
+      * ISMEAR不同还有不同的处理部分
+      
+       ```fortran
+        IF (KPOINTS%ISMEAR >= -1) THEN
+           CALL M_sum_d(WDES%COMM_KINTER, EPS_IMAG, SIZE(EPS_IMAG))
+           CALL M_sum_d(WDES%COMM_KINTER, WPLASMON, SIZE(WPLASMON))
+           CALL M_sum_d(WDES%COMM_KINTER, CON, SIZE(CON))
+        ENDIF
+    ! CON is presently not calculated by EPSILON_IMAG_TET
+        IF (KPOINTS%ISMEAR <= -4) THEN
+           CON=COND_ENERGY(NEDOS/2,:,:,1)
+           IF (WDES%ISPIN==2) THEN
+              CON=COND_ENERGY(NEDOS/2,:,:,1)+COND_ENERGY(NEDOS/2,:,:,2)
+           ENDIF
+           WPLASMON=CON/RTIME/CONTCON 
+        ENDIF
+       ```
+       
+     * 之后是根据虚部计算实部`CALL EPSILON_REAL`
+     * 介电常数计算完毕后LR_OPTIC也就是linear_optics.F就结束了。
 
-          * IF \(NPAR ==1 .AND. KPAR==1 .AND. LPAW\) THEN CALL CALC\_NABIJ\(optics.F\)
+  * IF \(NPAR ==1 .AND. KPAR==1 .AND. LPAW\) THEN CALL CALC\_NABIJ\(optics.F\)
+    * `CALC_NABIJ`是与OPTIC文件有关的函数
+    * NBVAL和NBCON的值来源
+      * `NBVAL=(NINT(INFO%NELECT)+1)/2`
+      * `NBVAL=MIN(NBVAL,WDES%NB_TOT)`
+      * `NBVAL=MAX(NBVAL,1)`
+      * `NBCON=WDES%NB_TOT-NBVAL`
+      * `NBCON=MIN(NBCON,WDES%NB_TOT)`
+      * `NBCON=MAX(NBCON,1)`
 
 
 
