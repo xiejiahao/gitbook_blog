@@ -1,0 +1,601 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VASP OPTIC Calculation Code · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../physics.html" />
+    
+    
+    <link rel="prev" href="soc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1.html">
+            
+                <a href="../chapter1.html">
+            
+                    
+                    Program and Software
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/123.html">
+            
+                <a href="../chapter1/123.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/github.html">
+            
+                <a href="../chapter1/github.html">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/merginnote.html">
+            
+                <a href="../chapter1/merginnote.html">
+            
+                    
+                    MarginNote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/zotero.html">
+            
+                <a href="../chapter1/zotero.html">
+            
+                    
+                    Zotero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/vscode.html">
+            
+                <a href="../chapter1/vscode.html">
+            
+                    
+                    VScode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter1/vim.html">
+            
+                <a href="../chapter1/vim.html">
+            
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" >
+            
+                <span>
+            
+                    
+                    Bibletex
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../456.html">
+            
+                <a href="../456.html">
+            
+                    
+                    VASP计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="soc.html">
+            
+                <a href="soc.html">
+            
+                    
+                    SOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="vasp-optic-calculation-code.html">
+            
+                <a href="vasp-optic-calculation-code.html">
+            
+                    
+                    VASP OPTIC Calculation Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../physics.html">
+            
+                <a href="../physics.html">
+            
+                    
+                    Physics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../spring.html">
+            
+                <a href="../spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../book-note.html">
+            
+                <a href="../book-note.html">
+            
+                    
+                    Book Note
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../123.html">
+            
+                <a href="../123.html">
+            
+                    
+                    123
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../the-quantum-theory-of-light.html">
+            
+                <a href="../the-quantum-theory-of-light.html">
+            
+                    
+                    The Quantum Theory of Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >VASP OPTIC Calculation Code</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vasp-optics">VASP OPTICS</h1>
+<ul>
+<li><p><code>PROGRAM VAMP</code></p>
+<ul>
+<li><p><code>IF (IO%LOPTICS) CALL SET_NABIJ_AUG(P,T_INFO%NTYP)</code></p>
+</li>
+<li><p><code>IF (IO%LOPTICS) THEN CALL LR_OPTIC</code>(linear_optics.F)</p>
+<ul>
+<li><p>LR_OPTIC&#x5F00;&#x5934;&#x8FD9;&#x4E00;&#x6BB5;&#x5F88;&#x8FF7;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;EMAX&#x548C;EMAX_CON</p>
+<pre><code class="lang-fortran">EMAX=MAX_ENERGY_UNOCCUPIED(WDES,W)*<span class="hljs-number">1.2</span>
+<span class="hljs-keyword">IF</span> (EMAX&lt;=<span class="hljs-number">0</span>) <span class="hljs-keyword">THEN</span>
+<span class="hljs-keyword">RETURN</span>
+<span class="hljs-keyword">ENDIF</span>
+<span class="hljs-keyword">IF</span> (OMEGAMAX_OPTIC/=-<span class="hljs-number">1</span>) <span class="hljs-keyword">THEN</span>
+EMAX=OMEGAMAX_OPTIC
+<span class="hljs-keyword">ENDIF</span>
+
+EMAX_COND=<span class="hljs-number">5</span>
+<span class="hljs-keyword">IF</span> (OMEGAMAX_OPTIC/=-<span class="hljs-number">1</span>) <span class="hljs-keyword">THEN</span>
+EMAX_COND=OMEGAMAX_OPTIC
+<span class="hljs-keyword">ENDIF</span>
+</code></pre>
+</li>
+<li><p><code>NBANDS_CDER=MIN(LAST_FILLED_OPTICS(W)*2, WDES%NB_TOT)</code>&#x8BBE;&#x7F6E;NBANDS_CDER&#xFF0C;&#x5373;&#x6B64;&#x5B50;&#x7A0B;&#x5E8F;&#x4E2D;&#x8003;&#x8651;&#x7684;&#x6700;&#x5927;&#x80FD;&#x5E26;&#x6570;&#x91CF;</p>
+</li>
+<li><p><code>CALL LRF_EPSILON</code>&#x8BA1;&#x7B97;&#x4ECB;&#x7535;&#x5E38;&#x6570;&#x865A;&#x90E8;&#x7684;&#x51FD;&#x6570;</p>
+<ul>
+<li>&#x8BBE;&#x7F6E;NB_TOT&#x548C;NBANDS<pre><code class="lang-fortran">WDES1=WDES
+WDES1%NB_TOT=NBANDS_CDER
+WDES1%NBANDS=NBANDS_CDER/WDES1%NB_PA
+</code></pre>
+</li>
+<li><p>&#x8C03;&#x7528;&#x771F;&#x6B63;&#x7684;&#x8BA1;&#x7B97;&#x51FD;&#x6570;</p>
+<pre><code class="lang-fortran"><span class="hljs-keyword">DO</span> IDIR=<span class="hljs-number">1</span>,<span class="hljs-number">3</span>
+<span class="hljs-keyword">DO</span> JDIR=<span class="hljs-number">1</span>,<span class="hljs-number">3</span>
+  <span class="hljs-keyword">IF</span> (KPOINTS%ISMEAR &gt;= -<span class="hljs-number">1</span>) <span class="hljs-keyword">THEN</span>
+    <span class="hljs-keyword">CALL</span> EPSILON_IMAG( WDES, W0, CHAM(:,:,:,:,IDIR), CHAM(:,:,:,:,JDIR), &amp; 
+    ENERGY_DER(:,:,:,IDIR), ENERGY_DER(:,:,:,JDIR), EFERMI, &amp;
+    NEDOS, EPS_IMAG(:,IDIR,JDIR), DELTAE, KPOINTS%ISMEAR, KPOINTS%SIGMA, &amp; 
+    LATT_CUR%OMEGA, WPLASMON(IDIR, JDIR), CON(IDIR, JDIR), RTIME)
+
+  ELSEIF (KPOINTS%ISMEAR &lt;= -<span class="hljs-number">4</span>) <span class="hljs-keyword">THEN</span>
+    <span class="hljs-keyword">CALL</span> EPSILON_IMAG_TET( WDES, W0, CHAM(:,:,:,:,IDIR), CHAM(:,:,:,:,JDIR), EMAX, &amp;
+    NEDOS, EPS_IMAG(:,IDIR,JDIR), DELTAE, LATT_CUR%OMEGA, IO, INFO, KPOINTS)
+  <span class="hljs-keyword">ENDIF</span>
+<span class="hljs-keyword">ENDDO</span>
+ENDD
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x6839;&#x636E;ISMEAR&#x7684;&#x4E0D;&#x540C;&#x6709;&#x4E24;&#x79CD;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;&#xFF0C;-1,0&#x662F;&#x4E00;&#x79CD;&#xFF0C;-4,-5&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x3002;<br>&#x867D;&#x7136;&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x63D0;&#x5230;&#x8FD9;&#x4E24;&#x79CD;&#x7B97;&#x6CD5;&#x5728;&#x7406;&#x8BBA;&#x4E0A;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x7ED3;&#x679C;&#x786E;&#x5B9E;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#x3002;</p>
+<ul>
+<li><p>ISMEAR = -1,0&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-fortran">    <span class="hljs-function"><span class="hljs-keyword">SUBROUTINE</span></span> EPSILON_IMAG( WDES, W0, CHAM1, CHAM2, DER1, DER2, EFERMI, &amp; 
+      NEDOS, DOS, DELTAE, ISMEAR, SIGMA, OMEGA, WPLASMON, CON, TAU)
+      DOS=<span class="hljs-number">0</span>
+      WPLASMON=<span class="hljs-number">0</span>
+      CON=<span class="hljs-number">0</span>
+
+      <span class="hljs-keyword">DO</span> ISP=<span class="hljs-number">1</span>,WDES%ISPIN
+      <span class="hljs-keyword">DO</span> NK=<span class="hljs-number">1</span>,WDES%NKPTS
+
+         <span class="hljs-keyword">IF</span> (<span class="hljs-built_in">MOD</span>(NK-<span class="hljs-number">1</span>,WDES%COMM_KINTER%NCPU).NE.WDES%COMM_KINTER%NODE_ME-<span class="hljs-number">1</span>) <span class="hljs-keyword">CYCLE</span>
+
+<span class="hljs-comment">! N1 could be restricted to occupied bands</span>
+         <span class="hljs-keyword">DO</span> N1=<span class="hljs-number">1</span>,WDES%NB_TOT
+<span class="hljs-comment">! N1 must be smaller tan NBANDS_CDER</span>
+         <span class="hljs-keyword">IF</span> (N1&gt;NBANDS_CDER) <span class="hljs-keyword">CYCLE</span>
+
+         ENERGY=W0%CELTOT(N1,NK,ISP)-EFERMI
+         <span class="hljs-keyword">IF</span> (ISMEAR==-<span class="hljs-number">1</span>) <span class="hljs-keyword">THEN</span>
+            SFUN=F(-ENERGY,<span class="hljs-built_in">ABS</span>(SIGMA))
+            DFUN=G(ENERGY,<span class="hljs-built_in">ABS</span>(SIGMA))
+         <span class="hljs-keyword">ELSE</span>
+            <span class="hljs-keyword">CALL</span> DELSTP(ISMEAR, ENERGY/<span class="hljs-built_in">ABS</span>(SIGMA), DFUN, SFUN)
+            DFUN=DFUN/<span class="hljs-built_in">ABS</span>(SIGMA)
+         <span class="hljs-keyword">ENDIF</span>
+<span class="hljs-comment">! DFUN d f / d epsilon (= delta)</span>
+<span class="hljs-comment">! conversion factor 4 pi e^2/ volume to obtain polarization</span>
+         WPLASMON=WPLASMON+DFUN*DER1(N1,NK,ISP)*DER2(N1,NK,ISP)*WDES%RSPIN*WDES%WTKPT(NK)*(<span class="hljs-number">4</span>*PI*FELECT/OMEGA)
+         CON=CON          +DFUN*DER1(N1,NK,ISP)*DER2(N1,NK,ISP)*WDES%RSPIN*WDES%WTKPT(NK)*(<span class="hljs-number">4</span>*PI*FELECT/OMEGA)*TAU*CONTCON 
+
+<span class="hljs-comment">! N2 could be restricted to empty bands</span>
+         <span class="hljs-keyword">DO</span> N2=N1+<span class="hljs-number">1</span>,WDES%NB_TOT
+            WEIGHT=(W0%FERTOT(N1,NK,ISP)-W0%FERTOT(N2,NK,ISP))*WDES%RSPIN*WDES%WTKPT(NK)
+            DECEL =(W0%CELTOT(N2,NK,ISP)-W0%CELTOT(N1,NK,ISP))
+<span class="hljs-comment">! contribution &lt;u_m| - i d/dk_i  |u_n&gt; &lt;u_m| i d/dk_j  |u_n&gt;</span>
+<span class="hljs-comment">!            = &lt;u_m| d/dk_i |u_n&gt; &lt;u_m| d/dk_j |u_n&gt;</span>
+<span class="hljs-comment">! note that we use the transposed and conjugated elements since the</span>
+<span class="hljs-comment">! second index is constrained to occupied bands</span>
+            A     =<span class="hljs-built_in">CONJG</span>(CHAM1(N2,N1,NK,ISP))*CHAM2(N2,N1,NK,ISP)
+<span class="hljs-comment">! conversion factor 4 pi^2 e^2/ volume to obtain polarization</span>
+<span class="hljs-comment">! add contribution for negative frequencies as well</span>
+            <span class="hljs-keyword">CALL</span> SLOT( DECEL, ISMEAR, SIGMA, NEDOS, DELTAE,  WEIGHT*A*<span class="hljs-number">4</span>*PI*PI*FELECT/OMEGA, DOS)
+            <span class="hljs-keyword">CALL</span> SLOT(-DECEL, ISMEAR, SIGMA, NEDOS, DELTAE, -WEIGHT*A*<span class="hljs-number">4</span>*PI*PI*FELECT/OMEGA, DOS)
+         <span class="hljs-keyword">ENDDO</span>
+         <span class="hljs-keyword">ENDDO</span>
+      <span class="hljs-keyword">ENDDO</span>
+      <span class="hljs-keyword">ENDDO</span>
+
+    <span class="hljs-keyword">END</span> <span class="hljs-function"><span class="hljs-keyword">SUBROUTINE</span></span> EPSILON_IMA
+</code></pre>
+</li>
+<li>ISMEAR=-4,-5<pre><code class="lang-fortran">EPSILON_IMAG_TET
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>ISMEAR&#x4E0D;&#x540C;&#x8FD8;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5904;&#x7406;&#x90E8;&#x5206;</p>
+<pre><code class="lang-fortran"><span class="hljs-keyword">IF</span> (KPOINTS%ISMEAR &gt;= -<span class="hljs-number">1</span>) <span class="hljs-keyword">THEN</span>
+   <span class="hljs-keyword">CALL</span> M_sum_d(WDES%COMM_KINTER, EPS_IMAG, <span class="hljs-built_in">SIZE</span>(EPS_IMAG))
+   <span class="hljs-keyword">CALL</span> M_sum_d(WDES%COMM_KINTER, WPLASMON, <span class="hljs-built_in">SIZE</span>(WPLASMON))
+   <span class="hljs-keyword">CALL</span> M_sum_d(WDES%COMM_KINTER, CON, <span class="hljs-built_in">SIZE</span>(CON))
+<span class="hljs-keyword">ENDIF</span>
+<span class="hljs-comment">! CON is presently not calculated by EPSILON_IMAG_TET</span>
+<span class="hljs-keyword">IF</span> (KPOINTS%ISMEAR &lt;= -<span class="hljs-number">4</span>) <span class="hljs-keyword">THEN</span>
+   CON=COND_ENERGY(NEDOS/<span class="hljs-number">2</span>,:,:,<span class="hljs-number">1</span>)
+   <span class="hljs-keyword">IF</span> (WDES%ISPIN==<span class="hljs-number">2</span>) <span class="hljs-keyword">THEN</span>
+      CON=COND_ENERGY(NEDOS/<span class="hljs-number">2</span>,:,:,<span class="hljs-number">1</span>)+COND_ENERGY(NEDOS/<span class="hljs-number">2</span>,:,:,<span class="hljs-number">2</span>)
+   <span class="hljs-keyword">ENDIF</span>
+   WPLASMON=CON/RTIME/CONTCON 
+<span class="hljs-keyword">ENDIF</span>
+</code></pre>
+</li>
+<li><p>&#x4E4B;&#x540E;&#x662F;&#x6839;&#x636E;&#x865A;&#x90E8;&#x8BA1;&#x7B97;&#x5B9E;&#x90E8;<code>CALL EPSILON_REAL</code></p>
+</li>
+<li>&#x4ECB;&#x7535;&#x5E38;&#x6570;&#x8BA1;&#x7B97;&#x5B8C;&#x6BD5;&#x540E;LR_OPTIC&#x4E5F;&#x5C31;&#x662F;linear_optics.F&#x5C31;&#x7ED3;&#x675F;&#x4E86;&#x3002;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>IF (NPAR ==1 .AND. KPAR==1 .AND. LPAW) THEN CALL CALC_NABIJ(optics.F)</p>
+<ul>
+<li><code>CALC_NABIJ</code>&#x662F;&#x4E0E;OPTIC&#x6587;&#x4EF6;&#x6709;&#x5173;&#x7684;&#x51FD;&#x6570;</li>
+<li>NBVAL&#x548C;NBCON&#x7684;&#x503C;&#x6765;&#x6E90;<ul>
+<li><code>NBVAL=(NINT(INFO%NELECT)+1)/2</code></li>
+<li><code>NBVAL=MIN(NBVAL,WDES%NB_TOT)</code></li>
+<li><code>NBVAL=MAX(NBVAL,1)</code></li>
+<li><code>NBCON=WDES%NB_TOT-NBVAL</code></li>
+<li><code>NBCON=MIN(NBCON,WDES%NB_TOT)</code></li>
+<li><code>NBCON=MAX(NBCON,1)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="soc.html" class="navigation navigation-prev " aria-label="Previous page: SOC">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../physics.html" class="navigation navigation-next " aria-label="Next page: Physics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"VASP OPTIC Calculation Code","level":"1.3.2","depth":2,"next":{"title":"Physics","level":"1.4","depth":1,"path":"physics.md","ref":"physics.md","articles":[]},"previous":{"title":"SOC","level":"1.3.1","depth":2,"path":"456/soc.md","ref":"456/soc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"456/vasp-optic-calculation-code.md","mtime":"2019-04-20T04:35:39.861Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-12T05:35:27.643Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
