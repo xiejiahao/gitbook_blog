@@ -1,5 +1,7 @@
 # Physics Theory
 
-物理学理论
+## 物理学理论
 
- $ 1/2 = 0.5 $
+ $ \epsilon $
+ 
+ $S\cap T=\{x\mid x\in S 且 x\in T\}$
